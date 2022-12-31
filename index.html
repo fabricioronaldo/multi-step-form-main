@@ -1,56 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  
   <title>Multi-step form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  <!-- Sidebar start -->
+  <header class="header">
 
-  Step 1
-  Your info
+    <div class="header__page">
+      <p class="page__number">1</p>
+      <p class="page__title">Step 1</p>
+      <p class="page__text">Your info</p>
+    </div>
 
-  Step 2
-  Select plan
+    <div class="header__page">
+      <p class="page__number">2</p>
+      <p class="page__title">Step 2</p>
+      <p class="page__text">Select plan</p>
+    </div>
 
-  Step 3
-  Add-ons
+    <div class="header__page">
+      <p class="page__number">3</p>
+      <p class="page__title">Step 3</p>
+      <p class="page__text">Add-ons</p>
+    </div>
 
-  Step 4
-  Summary
+    <div class="header__page">
+      <p class="page__number">4</p>
+      <p class="page__title">Step 4</p>
+      <p class="page__text">Summary</p>
+    </div>
 
-  <!-- Sidebar end -->
+  </header>
 
-  <!-- Step 1 start -->
+  <main class="main">
 
-  Personal info
-  Please provide your name, email address, and phone number.
+    <section class="principol">
+      
+      <div class="personal">
+        <!-- Step 1 start -->
 
-  Name
-  e.g. Stephen King
+        <h1 class="personal__title">Personal info</h1>
+        <p class="personal__text">Please provide your name, email address, and phone number.</p>
 
-  Email Address
-  e.g. stephenking@lorem.com
+        <form action="" class="personal__form">
 
-  Phone Number
-  e.g. +1 234 567 890
+          <div>
+            <label for="name" class="form__titulo">Name:</label>
+            <input type="text" class="form__name" id="name" name="name" placeholder="e.g. Stephen King">
+          </div>
 
-  Next Step
+          <div>
 
-  <!-- Step 1 end -->
+            <label for="email" class="form__titulo">Email Address:</label>
+            <input type="email" name="email" id="email" class="form__email" placeholder="e.g. stephenking@lorem.com">
+          </div>
+
+          <div>
+            <labe for="phone" class="form__title">Phone Number:</labe>
+            <input type="tel" name="phone" id="phone" placeholder="e.g. +1 234 567 890">
+          </div>
+
+        </form>
+    
+      </div>
+    
+    </section>
+
+    <section class="navegate">
+      <nav>
+        <button class="navegate__button">Next Step</button>
+
+      </nav>
+    </section>
+
+  </main>
+
 
   <!-- Step 2 start -->
 
@@ -114,17 +151,18 @@
 
   Thank you!
 
-  Thanks for confirming your subscription! We hope you have fun 
-  using our platform. If you ever need support, please feel free 
+  Thanks for confirming your subscription! We hope you have fun
+  using our platform. If you ever need support, please feel free
   to email us at support@loremgaming.com.
 
   <!-- Step 5 end -->
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 
   <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
