@@ -1,0 +1,22 @@
+.navegate {
+    background: var(--White);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navegate__button {
+    margin: 1em;
+    background: var(--Marine-blue);
+    color: var(--White);
+    border:none;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.navegate__button--back {
+   margin: 1em; 
+   background: transparent;
+   color: var(--Cool-gray);
+   border: none;
+}
