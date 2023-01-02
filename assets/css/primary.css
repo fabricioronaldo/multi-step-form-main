@@ -1,0 +1,9 @@
+.primary__container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--White);
+    border-radius: 5px;
+    padding: 1em;
+    position: relative;
+    bottom: 90px
+}

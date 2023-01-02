@@ -49,7 +49,7 @@
 
     <section class="primary">
       
-      <div class="personal">
+      <div class="primary__container personal">
         <!-- Step 1 start -->
 
         <h1 class="personal__title">Personal info</h1>
@@ -76,9 +76,43 @@
         </form>
     
       </div>
+
+      <div class="primary__container plan">
+
+  
+  
+
+  
+        <!-- Step 1 start -->
+
+        <h1 class="personal__title">Select your plan</h1>
+        <p class="personal__text">You have the option of monthly or yearly billing.</p>
+
+        <form action="" class="plan__form">
+
+          <div class="form__button">
+            <label for="arcade" class="form__titulo"><img src="./assets/images/icon-arcade.svg" alt="">Arcade $9/mo</label>
+            <input type="radio" name="plan" class="form__arcade" id="arcade" >
+          </div>
+
+          <div class="form__button">
+
+            <label for="advanced" class="form__titulo"><img src="./assets/images/icon-advanced.svg" alt=""> Advanced $12/mo</label>
+            <input type="radio" name="plan" id="advanced" class="form__advanced">
+          </div>
+
+          <div class="form__button">
+            <input type="radio" name="plan" id="pro" class="form__pro"><img src="./assets/images/icon-pro.svg" alt="">
+            <labe for="pro" class="form__titulo">Pro $15/mo</labe>
+          </div>
+
+        </form>
+        
+      </div>
     
     </section>
-
+    Monthly
+    Yearly
     <section class="navegate">
         
         <button class="navegate__button--back">Go Back</button>
@@ -91,23 +125,7 @@
 
   <!--Step 2 start 
 
-  Select your plan
-  You have the option of monthly or yearly billing.
-
-  Arcade
-  $9/mo
-
-  Advanced
-  $12/mo
-
-  Pro
-  $15/mo
-
-  Monthly
-  Yearly
-
-  Go Back
-  Next Step
+  
 
   <!-- Step 2 end -->
 
@@ -156,12 +174,12 @@
   to email us at support@loremgaming.com.
 
   <!-- Step 5 end -->
- 
+ <footer class="footer">
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Fabricio Velasco</a>.
   </div>
-
+</footer>
   <script src="./assets/js/main.js"></script>
 </body>
 

@@ -14,3 +14,13 @@
     border-radius: 5px;
     border: 1px solid var(--Light-gray);
 }
+
+.form__button {
+    margin: 1em 0;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid var(--Light-gray);
+    border-radius: 5px;
+    
+}
+
