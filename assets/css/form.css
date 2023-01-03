@@ -4,7 +4,8 @@
 }
 
 .form__titulo {
- 
+ width: 100%;
+ padding: 1em;
 }
 
 .form__name, .form__email, .form__title {
