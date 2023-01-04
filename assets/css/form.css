@@ -4,8 +4,8 @@
 }
 
 .form__titulo {
- width: 100%;
- padding: 1em;
+ 
+ 
 }
 
 .form__name, .form__email, .form__title {
@@ -25,3 +25,18 @@
     
 }
 
+.titulo__container {
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.container__text{
+    padding: 0 1em;
+    border-radius: 5px;
+}
+
+input[type=radio] {
+    visibility: hidden;
+}

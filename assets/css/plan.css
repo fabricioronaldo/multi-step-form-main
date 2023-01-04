@@ -1,3 +1,70 @@
-.plan__black {
+.plan__button {
+    background: var(--Light-gray);
+    padding: 1em;
+    border-radius: 10px;
+    //display: flex;
+    //align-items: center;
+}
+.button__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+} 
+
+
+#button__check {
+ display: none;   
+}
+
+.button__slider {
+    background: var(--Marine-blue);
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: all 300ms ease-in-out;
+    width: 4rem;
+    height: 1.5rem;
+    position: relative;
+}
+
+.slider__button {
+    content: "";
+    position: absolute;
+    width:1.2rem;
+    height: 1.2rem;
+    background: var(--White);
+    border-radius: 50%;
+    top: 0.15em;
+    left: 0.2rem;
+    transition: all 300ms ease-in-out;
+    z-index: 2;
     
+
+}
+
+.slider__button:after{
+    //position: absolute;
+    //transform: translate(0, -50%);
+    //transition: all 300ms ease-in-out;
+    //content: "";
+    
+}
+
+.button__label > .button__check:checked ~ .button__slider {
+    background: var(--Light-gray);
+    box-shadow: inset .5rem .5rem .5rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(50, 0, 150, 0.2);
+}
+
+.button__label > .button__check:checked ~ .button__slider > .slider__button{
+    left: 2.6rem;
+    background: var(--Marine-blue);
+}
+
+.button__label > .button__check:checked ~ .yea{
+    color: var(--Alabaster);
+}
+
+.button__label > .button__check:checked ~ .button__slider::after {
+ //   right: 1rem;
+   // content: "";
 }
