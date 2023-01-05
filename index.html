@@ -93,8 +93,8 @@
                 <img src="./assets/images/icon-arcade.svg" alt="">
                 <div class="container__text">
                   <ul>
-                    <li>Arcade</li>
-                    <li>$9/mo</li>
+                    <li class="text__title">Arcade</li>
+                    <li class="text__value">$9/mo</li>
                   </ul>
                 </div>
               </div>
@@ -110,8 +110,8 @@
 
                 <div class="container__text">
                   <ul>
-                    <li>Advanced</li>
-                    <li>$12/mo</li>
+                    <li class="text__title">Advanced</li>
+                    <li class="text__value">$12/mo</li>
                   </ul>
                 </div>
               </div>
@@ -125,11 +125,11 @@
               <div class="titulo__container">
                 <input type="radio" name="plan" id="pro" class="form__pro">
                 <img src="./assets/images/icon-pro.svg" alt="">
-                
+
                 <div class="container__text">
                   <ul>
-                    <li>Pro</lbui>
-                    <li>$15/mo</li>
+                    <li class="text__title">Pro</lbui>
+                    <li class="text__value">$15/mo</li>
                   </ul>
                 </div>
 
@@ -139,17 +139,17 @@
 
         </form>
         <div class="plan__button">
-          
+
           <label for="button__check" class="button__label">
-          <span class="mon">Monthly</span> 
-          <input type="checkbox" id="button__check" class="button__check">
-          <div class="button__slider">
-            <div class="slider__button"></div>
-          </div>
-          <span class="yea">Yearly</span> 
-        </label>
+            <span class="mon">Monthly</span>
+            <input type="checkbox" id="button__check" class="button__check">
+            <div class="button__slider">
+              <div class="slider__button"></div>
+            </div>
+            <span class="yea">Yearly</span>
+          </label>
         </div>
-        
+
 
       </div>
 
@@ -163,37 +163,127 @@
         <form action="" class="plan__form">
 
           <div class="form__button">
-            <label for="arcade" class="form__titulo"><img src="./assets/images/icon-arcade.svg" alt="">Arcade $9/mo 2
-              monthly free</label>
-            <input type="radio" name="plan" class="form__arcade" id="arcade">
+
+            <label for="arcade" class="form__titulo">
+              <div class="titulo__container">
+                <input type="radio" name="plan" class="form__arcade" id="arcade">
+                <img src="./assets/images/icon-arcade.svg" alt="">
+                <div class="container__text">
+                  <ul>
+                    <li class="text__title">Arcade</li>
+                    <li class="text__value">$9/mo</li>
+                    <li class="text__value-blue">2 Monthf free</li>
+                  </ul>
+                </div>
+              </div>
+            </label>
           </div>
 
           <div class="form__button">
 
-            <label for="advanced" class="form__titulo"><img src="./assets/images/icon-advanced.svg" alt=""> Advanced
-              $12/mo 2 monthly free</label>
-            <input type="radio" name="plan" id="advanced" class="form__advanced">
+            <label for="advanced" class="form__titulo">
+              <div class="titulo__container">
+                <input type="radio" name="plan" id="advanced" class="form__advanced">
+                <img src="./assets/images/icon-advanced.svg" alt="">
+
+                <div class="container__text">
+                  <ul>
+                    <li class="text__title">Advanced</li>
+                    <li class="text__value">$12/mo</li>
+                    <li class="text__value-blue">2 Monthf free</li>
+                  </ul>
+                </div>
+              </div>
+            </label>
+
           </div>
 
           <div class="form__button">
-            <input type="radio" name="plan" id="pro" class="form__pro"><img src="./assets/images/icon-pro.svg" alt="">
-            <labe for="pro" class="form__titulo">Pro $15/mo 2 monthly free</labe>
-          </div>
 
+            <labe for="pro" class="form__titulo">
+              <div class="titulo__container">
+                <input type="radio" name="plan" id="pro" class="form__pro">
+                <img src="./assets/images/icon-pro.svg" alt="">
+
+                <div class="container__text">
+                  <ul>
+                    <li class="text__title">Pro</lbui>
+                    <li class="text__value">$15/mo</li>
+                    <li class="text__value-blue">2 Monthf free</li>
+                  </ul>
+                </div>
+
+              </div>
+            </labe>
+          </div>
         </form>
-        <div class="plan__button">
-          
-          <label for="button__check" class="button__label">
-          <span class="mon">Monthly</span> 
-          <input type="checkbox" id="button__check" class="button__check">
-          <div class="button__slider">
-            <div class="slider__button"></div>
-          </div>
-          <span class="yea">Yearly</span> 
-        </label>
-        </div>
-
       </div>
+
+      <!-- Pick Add ons -->
+
+      <div class="primary__container pick">
+
+        <h1 class="personal__title">Pick add-ons</h1>
+        <p class="personal__text">Add-ons help enhance your gaming experience.</p>
+
+        <form action="" class="pick__form">
+
+          <div class="form__button">
+
+            <label for="service" class="form__titulo">
+              <div class="titulo__container">
+                <input type="checkbox" name="plan" class="form__service" id="service">
+                <div class="container__text">
+                  <ul>
+                    <li class="text__title">Online service</li>
+                    <li class="text__value">Access to multiplayer games</li>
+                  </ul>
+                </div>
+                <p class="text__value-blue">+$1/mo</p>
+              </div>
+            </label>
+          </div>
+
+          <div class="form__button">
+
+            <label for="storage" class="form__titulo">
+              <div class="titulo__container">
+                <input type="checkbox" name="plan" id="storage" class="form__storage">
+
+                <div class="container__text">
+                  <ul>
+                    <li class="text__title">Larger storage</li>
+                    <li class="text__value">Extra 1TB of cloud save</li>
+                  </ul>
+                </div>
+                <p class="text__value-blue">+$2/mo</p>
+              </div>
+            </label>
+
+          </div>
+
+          <div class="form__button">
+
+            <labe for="pro" class="form__titulo">
+              <div class="titulo__container">
+                <input type="radio" name="plan" id="pro" class="form__pro">
+                <img src="./assets/images/icon-pro.svg" alt="">
+
+                <div class="container__text">
+                  <ul>
+                    <li class="text__title">Customizable Profile</lbui>
+                    <li class="text__value">Custom theme on your profile</li>
+                  </ul>
+                </div>
+                <p class="text__value-blue">+$2/mo</p>
+
+              </div>
+            </labe>
+          </div>
+        </form>
+      </div>
+
+
     </section>
 
     <section class="navegate">
@@ -206,28 +296,9 @@
   </main>
 
 
-  <!--Step 2 start 
 
-  
 
-  <!-- Step 2 end -->
 
-  <!-- Step 3 start 
-
-  Pick add-ons
-  Add-ons help enhance your gaming experience.
-
-  Online service
-  Access to multiplayer games
-  +$1/mo
-
-  Larger storage
-  Extra 1TB of cloud save
-  +$2/mo
-
-  Customizable Profile
-  Custom theme on your profile
-  +$2/mo
 
   Go Back
   Next Step

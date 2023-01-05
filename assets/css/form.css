@@ -1,10 +1,4 @@
-.personal__text {
-    color: var(--Light-gray);
-    font-size: 1.2rem;
-}
-
 .form__titulo {
- 
  
 }
 
@@ -22,14 +16,11 @@
     padding: 1em;
     border: 1px solid var(--Light-gray);
     border-radius: 5px;
-    
 }
 
 .titulo__container {
     display: flex;
     align-items: center;
-    
-
 }
 
 .container__text{
@@ -39,4 +30,20 @@
 
 input[type=radio] {
     visibility: hidden;
+}
+
+.text__title {
+    color: var(--Marine-blue);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.text__value {
+    color: var(--Light-gray);
+    padding: .2em 0;
+}
+
+.text__value-blue {
+    color: var(--Marine-blue);
+    font-size: .8em;
 }

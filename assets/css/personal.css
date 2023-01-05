@@ -1,3 +1,12 @@
 .personal {
     display: none;
 }
+
+.personal__title {
+    color: var(--Marine-blue);
+}
+
+.personal__text {
+    color: var(--Light-gray);
+    font-size: 1.2rem;
+}
