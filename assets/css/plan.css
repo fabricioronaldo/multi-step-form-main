@@ -64,7 +64,3 @@
     color: var(--Alabaster);
 }
 
-.button__label > .button__check:checked ~ .button__slider::after {
- //   right: 1rem;
-   // content: "";
-}
