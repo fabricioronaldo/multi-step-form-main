@@ -1,5 +1,6 @@
-.form__titulo {
- 
+.form {
+    display:flex;
+    width: 600%;
 }
 
 .form__name, .form__email, .form__title {

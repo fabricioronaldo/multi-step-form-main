@@ -1,9 +1,21 @@
-.primary__container {
+.primary {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 20px;
     background-color: var(--White);
     border-radius: 5px;
     padding: 1em;
     position: relative;
-    bottom: 90px
+    bottom: 90px;
+       
+}
+
+.primary__container {
+    width: 333px;
+    padding: 8px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.over {
+    width: 100%;
+    overflow: hidden;
 }
