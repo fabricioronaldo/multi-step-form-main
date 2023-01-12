@@ -29,3 +29,20 @@
 
     
 }
+
+@media screen and (min-width:1024px) {
+    .header {
+        display: block;
+        width: 250px;
+        height: 600px;
+    }
+
+    .page__title, .page__text {
+        display: block;
+    }
+
+    .header__page {
+        display: flex;
+        
+    }
+}
