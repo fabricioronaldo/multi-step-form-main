@@ -17,273 +17,358 @@
 
 <body>
   <div class="container">
-    <div>
-    <header class="header">
+    <div class="container__header">
+      <header class="header">
 
-      <div class="header__page">
-        <p class="page__number">1</p>
-        <div>
-        <p class="page__title">Step 1</p>
-        <p class="page__text">Your info</p>
+        <div class="header__page">
+          <div class="number">
+            <p class="page__number">1</p>
+          </div>
+          <div class="description">
+            <p class="page__title">Step 1</p>
+            <p class="page__text">Your info</p>
+          </div>
         </div>
-      </div>
 
-      <div class="header__page">
-        <p class="page__number">2</p>
-        <p class="page__title">Step 2</p>
-        <p class="page__text">Select plan</p>
-      </div>
+        <div class="header__page">
+          <div class="number">
+            <p class="page__number">2</p>
+          </div>
+          <div class="description">
+            <p class="page__title">Step 2</p>
+            <p class="page__text">Select plan</p>
+          </div>
+        </div>
 
-      <div class="header__page">
-        <p class="page__number">3</p>
-        <p class="page__title">Step 3</p>
-        <p class="page__text">Add-ons</p>
-      </div>
+        <div class="header__page">
+          <div class="number">
+            <p class="page__number">3</p>
+          </div>
+          <div class="description">
+            <p class="page__title">Step 3</p>
+            <p class="page__text">Add-ons</p>
+          </div>
+        </div>
 
-      <div class="header__page">
-        <p class="page__number">4</p>
-        <p class="page__title">Step 4</p>
-        <p class="page__text">Summary</p>
-      </div>
+        <div class="header__page">
+          <div class="number">
+            <p class="page__number">4</p>
+          </div>
+          <div class="description">
+            <p class="page__title">Step 4</p>
+            <p class="page__text">Summary</p>
+          </div>
+        </div>
 
-    </header>
+      </header>
     </div>
     <main class="main">
 
       <section class="primary">
 
         <div class="over">
-        <form action="" class="form">
+          <form action="" class="form">
 
-          <!---------- Início da tela Personal Info ----------->
-          <div class="primary__container personal">
+            <!---------- Início da tela Personal Info ----------->
+            <div class="primary__container personal">
 
-            <h1 class="personal__title">Personal info</h1>
-            <p class="personal__text">Please provide your name, email address, and phone number.</p>
+              <h1 class="personal__title">Personal info</h1>
+              <p class="personal__text">Please provide your name, email address, and phone number.</p>
 
-            <div>
-              <label for="name" class="form__titulo">Name:</label>
-              <input type="text" class="form__name" id="name" name="name" placeholder="e.g. Stephen King">
+              <div>
+                <label for="name" class="form__titulo">Name:</label>
+                <input type="text" class="form__name" id="name" name="name" placeholder="e.g. Stephen King">
+              </div>
+
+              <div>
+                <label for="email" class="form__titulo">Email Address:</label>
+                <input type="email" name="email" id="email" class="form__email"
+                  placeholder="e.g. stephenking@lorem.com">
+              </div>
+
+              <div>
+                <labe for="phone" class="form__titulo">Phone Number:</labe>
+                <input type="tel" name="phone" id="phone" class="form__title" placeholder="e.g. +1 234 567 890">
+              </div>
+              <div class="navegate">
+
+                <button class="navegate__button" id="next_1">Next Step</button>
+
+              </div>
             </div>
+            <!---------- FIM da tela Personal Info ----------->
 
-            <div>
-              <label for="email" class="form__titulo">Email Address:</label>
-              <input type="email" name="email" id="email" class="form__email" placeholder="e.g. stephenking@lorem.com">
-            </div>
+            <!---------- Início da tela Select your plan ----------->
+            <div class="primary__container plan">
 
-            <div>
-              <labe for="phone" class="form__titulo">Phone Number:</labe>
-              <input type="tel" name="phone" id="phone" class="form__title" placeholder="e.g. +1 234 567 890">
-            </div>
-          </div>
-          <!---------- FIM da tela Personal Info ----------->
+              <h1 class="personal__title">Select your plan</h1>
+              <p class="personal__text">You have the option of monthly or yearly billing.</p>
 
-          <!---------- Início da tela Select your plan ----------->
-          <div class="primary__container plan">
+              <div class="form__button">
 
-            <h1 class="personal__title">Select your plan</h1>
-            <p class="personal__text">You have the option of monthly or yearly billing.</p>
-
-            <div class="form__button">
-
-              <label for="arcade" class="form__titulo">
-                <div class="titulo__container">
-                  <input type="radio" name="plan" class="form__arcade" id="arcade">
-                  <img src="./assets/images/icon-arcade.svg" alt="">
-                  <div class="container__text">
-                    <ul>
-                      <li class="text__title">Arcade</li>
-                      <li class="text__value">$9/mo</li>
-                    </ul>
+                <label for="arcade" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="radio" name="plan" class="form__arcade" id="arcade">
+                    <img src="./assets/images/icon-arcade.svg" alt="">
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Arcade</li>
+                        <li class="text__value">$9/mo</li>
+                        <li class="text__value-blue">2 Monthf free</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </label>
-            </div>
+                </label>
+              </div>
 
-            <div class="form__button">
+              <div class="form__button">
 
-              <label for="advanced" class="form__titulo">
-                <div class="titulo__container">
-                  <input type="radio" name="plan" id="advanced" class="form__advanced">
-                  <img src="./assets/images/icon-advanced.svg" alt="">
+                <label for="advanced" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="radio" name="plan" id="advanced" class="form__advanced">
+                    <img src="./assets/images/icon-advanced.svg" alt="">
 
-                  <div class="container__text">
-                    <ul>
-                      <li class="text__title">Advanced</li>
-                      <li class="text__value">$12/mo</li>
-                    </ul>
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Advanced</li>
+                        <li class="text__value">$12/mo</li>
+                        <li class="text__value-blue">2 Monthf free</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </label>
+                </label>
 
-            </div>
+              </div>
 
-            <div class="form__button">
+              <div class="form__button">
 
-              <labe for="pro" class="form__titulo">
-                <div class="titulo__container">
-                  <input type="radio" name="plan" id="pro" class="form__pro">
-                  <img src="./assets/images/icon-pro.svg" alt="">
+                <labe for="pro" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="radio" name="plan" id="pro" class="form__pro">
+                    <img src="./assets/images/icon-pro.svg" alt="">
 
-                  <div class="container__text">
-                    <ul>
-                      <li class="text__title">Pro</lbui>
-                      <li class="text__value">$15/mo</li>
-                    </ul>
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Pro</lbui>
+                        <li class="text__value">$15/mo</li>
+                        <li class="text__value-blue">2 Monthf free</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </labe>
-            </div>
+                </labe>
+              </div>
 
 
-            <div class="plan__button">
+              <div class="plan__button">
 
-              <label for="button__check" class="button__label">
-                <span class="mon">Monthly</span>
-                <input type="checkbox" id="button__check" class="button__check">
-                <div class="button__slider">
-                  <div class="slider__button"></div>
-                </div>
-                <span class="yea">Yearly</span>
-              </label>
-            </div>
-          </div>
-          <!---------- FIM da tela Select your plan ----------->
-
-          <!---------- Início da tela Plan-Yearly ----------->
-          <div class="primary__container plan-yearly">
-
-            <h1 class="personal__title">Select your plan</h1>
-            <p class="personal__text">You have the option of monthly or yearly billing.</p>
-
-            <div class="form__button">
-
-              <label for="arcade" class="form__titulo">
-                <div class="titulo__container">
-                  <input type="radio" name="plan" class="form__arcade" id="arcade">
-                  <img src="./assets/images/icon-arcade.svg" alt="">
-                  <div class="container__text">
-                    <ul>
-                      <li class="text__title">Arcade</li>
-                      <li class="text__value">$9/mo</li>
-                      <li class="text__value-blue">2 Monthf free</li>
-                    </ul>
+                <label for="button__check" class="button__label">
+                  <span class="mon">Monthly</span>
+                  <input type="checkbox" id="button__check" class="button__check">
+                  <div class="button__slider">
+                    <div class="slider__button"></div>
                   </div>
-                </div>
-              </label>
+                  <span class="yea">Yearly</span>
+                </label>
+              </div>
+              <div class="navegate">
+                <button class="navegate__button--back" id="back_1">Go Back</button>
+
+                <button class="navegate__button" id="next_2">Next Step</button>
+              </div>
             </div>
+            <!---------- FIM da tela Select your plan ----------->
 
-            <div class="form__button">
+            <!---------- Início da tela Plan-Yearly ----------->
+            <div class="primary__container plan-yearly">
 
-              <label for="advanced" class="form__titulo">
-                <div class="titulo__container">
-                  <input type="radio" name="plan" id="advanced" class="form__advanced">
-                  <img src="./assets/images/icon-advanced.svg" alt="">
+              <h1 class="personal__title">Select your plan</h1>
+              <p class="personal__text">You have the option of monthly or yearly billing.</p>
 
-                  <div class="container__text">
-                    <ul>
-                      <li class="text__title">Advanced</li>
-                      <li class="text__value">$12/mo</li>
-                      <li class="text__value-blue">2 Monthf free</li>
-                    </ul>
+              <div class="form__button">
+
+                <label for="arcade" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="radio" name="plan" class="form__arcade" id="arcade">
+                    <img src="./assets/images/icon-arcade.svg" alt="">
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Arcade</li>
+                        <li class="text__value">$9/mo</li>
+                        <li class="text__value-blue">2 Monthf free</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </label>
+                </label>
+              </div>
 
-            </div>
+              <div class="form__button">
 
-            <div class="form__button">
+                <label for="advanced" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="radio" name="plan" id="advanced" class="form__advanced">
+                    <img src="./assets/images/icon-advanced.svg" alt="">
 
-              <labe for="pro" class="form__titulo">
-                <div class="titulo__container">
-                  <input type="radio" name="plan" id="pro" class="form__pro">
-                  <img src="./assets/images/icon-pro.svg" alt="">
-
-                  <div class="container__text">
-                    <ul>
-                      <li class="text__title">Pro</lbui>
-                      <li class="text__value">$15/mo</li>
-                      <li class="text__value-blue">2 Monthf free</li>
-                    </ul>
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Advanced</li>
+                        <li class="text__value">$12/mo</li>
+                        <li class="text__value-blue">2 Monthf free</li>
+                      </ul>
+                    </div>
                   </div>
+                </label>
 
-                </div>
-              </labe>
-            </div>
-          </div>
-          <!---------- FIM da tela Plan-Yearly ----------->
+              </div>
 
-          <!---------- Início da tela Pick Add ons ----------->
-          <div class="primary__container pick">
+              <div class="form__button">
 
-            <h1 class="personal__title">Pick add-ons</h1>
-            <p class="personal__text">Add-ons help enhance your gaming experience.</p>
+                <labe for="pro" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="radio" name="plan" id="pro" class="form__pro">
+                    <img src="./assets/images/icon-pro.svg" alt="">
 
-            <div class="form__button">
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Pro</lbui>
+                        <li class="text__value">$15/mo</li>
+                        <li class="text__value-blue">2 Monthf free</li>
+                      </ul>
+                    </div>
 
-              <label for="service" class="form__titulo">
-                <div class="titulo__container">
-                  <input type="checkbox" name="plan" class="form__service" id="service">
-                  <div class="container__text">
-                    <ul>
-                      <li class="text__title">Online service</li>
-                      <li class="text__value">Access to multiplayer games</li>
-                    </ul>
                   </div>
-                  <p class="text__value-blue">+$1/mo</p>
-                </div>
-              </label>
+                </labe>
+              </div>
             </div>
+            <!---------- FIM da tela Plan-Yearly ----------->
 
-            <div class="form__button">
+            <!---------- Início da tela Pick Add ons ----------->
+            <div class="primary__container pick">
 
-              <label for="storage" class="form__titulo">
-                <div class="titulo__container">
-                  <input type="checkbox" name="" id="storage" class="form__storage">
+              <h1 class="personal__title">Pick add-ons</h1>
+              <p class="personal__text">Add-ons help enhance your gaming experience.</p>
 
-                  <div class="container__text">
-                    <ul>
-                      <li class="text__title">Larger storage</li>
-                      <li class="text__value">Extra 1TB of cloud save</li>
-                    </ul>
+              <div class="form__button">
+
+                <label for="service" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="checkbox" name="plan" class="form__service" id="service">
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Online service</li>
+                        <li class="text__value">Access to multiplayer games</li>
+                      </ul>
+                    </div>
+                    <p class="text__value-blue">+$1/mo</p>
                   </div>
-                  <p class="text__value-blue">+$2/mo</p>
-                </div>
-              </label>
+                </label>
+              </div>
 
-            </div>
+              <div class="form__button">
 
-            <div class="form__button">
+                <label for="storage" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="checkbox" name="" id="storage" class="form__storage">
 
-              <label for="profile" class="form__titulo">
-                <div class="titulo__container">
-                  <input type="checkbox" name="" id="profile" class="form__profile">
-
-                  <div class="container__text">
-                    <ul>
-                      <li class="text__title">Customizable Profile</lbui>
-                      <li class="text__value">Custom theme on your profile</li>
-                    </ul>
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Larger storage</li>
+                        <li class="text__value">Extra 1TB of cloud save</li>
+                      </ul>
+                    </div>
+                    <p class="text__value-blue">+$2/mo</p>
                   </div>
-                  <p class="text__value-blue">+$2/mo</p>
+                </label>
 
-                </div>
-              </label>
+              </div>
+
+              <div class="form__button">
+
+                <label for="profile" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="checkbox" name="" id="profile" class="form__profile">
+
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Customizable Profile</lbui>
+                        <li class="text__value">Custom theme on your profile</li>
+                      </ul>
+                    </div>
+                    <p class="text__value-blue">+$2/mo</p>
+
+                  </div>
+                </label>
+              </div>
             </div>
-          </div>
-          <!---------- FIM da tela Pick Add ons ----------->
+            <!---------- FIM da tela Pick Add ons ----------->
 
-          <!---------- Início da tela Pick add Ons - Year ---------->
-          <div class="primary__container pick-yearly">
+            <!---------- Início da tela Pick add Ons - Year ---------->
+            <div class="primary__container pick-yearly">
 
-            <h1 class="personal__title">Pick add-ons</h1>
-            <p class="personal__text">Add-ons help enhance your gaming experience.</p>
+              <h1 class="personal__title">Pick add-ons</h1>
+              <p class="personal__text">Add-ons help enhance your gaming experience.</p>
 
-            <div class="form__button">
+              <div class="form__button">
 
-              <label for="service" class="form__titulo">
+                <label for="service" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="checkbox" name="plan" class="form__service" id="service">
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Online service</li>
+                        <li class="text__value">Access to multiplayer games</li>
+                      </ul>
+                    </div>
+                    <p class="text__value-blue">+$10/yr</p>
+                  </div>
+                </label>
+              </div>
+
+              <div class="form__button">
+
+                <label for="storage" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="checkbox" name="" id="storage" class="form__storage">
+
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Larger storage</li>
+                        <li class="text__value">Extra 1TB of cloud save</li>
+                      </ul>
+                    </div>
+                    <p class="text__value-blue">+$20/yr</p>
+                  </div>
+                </label>
+
+              </div>
+
+              <div class="form__button">
+
+                <labe for="profile" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="checkbox" name="" id="profile" class="form__profile">
+
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Customizable Profile</lbui>
+                        <li class="text__value">Custom theme on your profile</li>
+                      </ul>
+                    </div>
+                    <p class="text__value-blue">+$20/yr</p>
+
+                  </div>
+                </labe>
+              </div>
+            </div>
+            <!---------- FIM da tela Pick add Ons - Year ---------->
+
+            <!--------- Início da tela de Finishing UP ---------->
+            <div class="primary__container finishing">
+
+              <h1 class="personal__title">Finishing up</h1>
+              <p class="personal__text">Double-check everything looks OK before confirming.</p>
+
+              <div class="form__button">
                 <div class="titulo__container">
-                  <input type="checkbox" name="plan" class="form__service" id="service">
                   <div class="container__text">
                     <ul>
                       <li class="text__title">Online service</li>
@@ -292,109 +377,53 @@
                   </div>
                   <p class="text__value-blue">+$10/yr</p>
                 </div>
-              </label>
-            </div>
-
-            <div class="form__button">
-
-              <label for="storage" class="form__titulo">
-                <div class="titulo__container">
-                  <input type="checkbox" name="" id="storage" class="form__storage">
-
-                  <div class="container__text">
-                    <ul>
-                      <li class="text__title">Larger storage</li>
-                      <li class="text__value">Extra 1TB of cloud save</li>
-                    </ul>
-                  </div>
-                  <p class="text__value-blue">+$20/yr</p>
-                </div>
-              </label>
-
-            </div>
-
-            <div class="form__button">
-
-              <labe for="profile" class="form__titulo">
-                <div class="titulo__container">
-                  <input type="checkbox" name="" id="profile" class="form__profile">
-
-                  <div class="container__text">
-                    <ul>
-                      <li class="text__title">Customizable Profile</lbui>
-                      <li class="text__value">Custom theme on your profile</li>
-                    </ul>
-                  </div>
-                  <p class="text__value-blue">+$20/yr</p>
-
-                </div>
-              </labe>
-            </div>
-          </div>
-          <!---------- FIM da tela Pick add Ons - Year ---------->
-
-          <!--------- Início da tela de Finishing UP ---------->
-          <div class="primary__container finishing">
-
-            <h1 class="personal__title">Finishing up</h1>
-            <p class="personal__text">Double-check everything looks OK before confirming.</p>
-
-            <div class="form__button">
-              <div class="titulo__container">
-                <div class="container__text">
-                  <ul>
-                    <li class="text__title">Online service</li>
-                    <li class="text__value">Access to multiplayer games</li>
-                  </ul>
-                </div>
-                <p class="text__value-blue">+$10/yr</p>
+                </label>
               </div>
-              </label>
-            </div>
 
-            <div class="form__button">
-              <label for="storage" class="form__titulo">
-                <div class="titulo__container">
-                  <input type="checkbox" name="" id="storage" class="form__storage">
-                  <div class="container__text">
-                    <ul>
-                      <li class="text__title">Larger storage</li>
-                      <li class="text__value">Extra 1TB of cloud save</li>
-                    </ul>
+              <div class="form__button">
+                <label for="storage" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="checkbox" name="" id="storage" class="form__storage">
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Larger storage</li>
+                        <li class="text__value">Extra 1TB of cloud save</li>
+                      </ul>
+                    </div>
+                    <p class="text__value-blue">+$20/yr</p>
                   </div>
-                  <p class="text__value-blue">+$20/yr</p>
-                </div>
-              </label>
-            </div>
+                </label>
+              </div>
 
-            <div class="form__button">
-              <labe for="profile" class="form__titulo">
-                <div class="titulo__container">
-                  <input type="checkbox" name="" id="profile" class="form__profile">
-                  <div class="container__text">
-                    <ul>
-                      <li class="text__title">Customizable Profile</lbui>
-                      <li class="text__value">Custom theme on your profile</li>
-                    </ul>
+              <div class="form__button">
+                <labe for="profile" class="form__titulo">
+                  <div class="titulo__container">
+                    <input type="checkbox" name="" id="profile" class="form__profile">
+                    <div class="container__text">
+                      <ul>
+                        <li class="text__title">Customizable Profile</lbui>
+                        <li class="text__value">Custom theme on your profile</li>
+                      </ul>
+                    </div>
+                    <p class="text__value-blue">+$20/yr</p>
                   </div>
-                  <p class="text__value-blue">+$20/yr</p>
-                </div>
-              </labe>
+                </labe>
+              </div>
             </div>
-          </div>
-          <!--------- Início da tela de Finishing UP ---------->
-        </form>
-      </div>
+            <!--------- Início da tela de Finishing UP ---------->
+          </form>
+        </div>
 
       </section>
 
+      <!--
       <section class="navegate">
 
         <button class="navegate__button--back" id="back">Go Back</button>
-        
+
         <button class="navegate__button" id="next">Next Step</button>
 
-      </section>
+      </section>-->
 
     </main>
 
@@ -422,14 +451,14 @@
   to email us at support@loremgaming.com.
 
   <!-- Step 5 end -->
-</div>
-<!--<footer class="footer">
+  </div>
+  <!--<footer class="footer">
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Fabricio Velasco</a>.
   </div>
 </footer>-->
-<script src="./assets/js/main.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

@@ -1,13 +1,30 @@
 const btnBack = document.querySelector("#back");
 console.log(btnBack);
 const next = document.querySelector(".navegate__button");
-const slidePage = document.querySelectorAll(".primary__container");
+const next_1 = document.querySelector("#next_1");
+const next_2 = document.querySelector("#next_2");
+const back_1 = document.querySelector("#back_1");
+const slidePage = document.querySelector(".primary__container");
+const active = document.querySelectorAll(".text__value-blue");
 console.log(slidePage);
-console.log(slidePage[0].classList.contains("personal"));
+//console.log(slidePage[0].classList.contains("personal"));
 
 let current = 1;
+next_1.addEventListener("click", function(event) {
+    event.preventDefault();
+    slidePage.style.marginLeft = "-16.66%";
+})
 
-btnBack.addEventListener("click", function(event){
+back_1.addEventListener("click", function(event) {
+    event.preventDefault();
+    slidePage.style.marginLeft = "0";
+})
+
+next_2.addEventListener("click", function(event) {
+    event.preventDefault();
+    slidePage.style.marginLeft = "-33.32%";
+})
+/*btnBack.addEventListener("click", function(event){
     
     slidePage.style.marginLeft = "0px";
     console.log(btnBack);

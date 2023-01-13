@@ -14,9 +14,30 @@
     padding: 1em;
 }
 
+.navegate__button:hover{
+    background: var(--Purplish-blue);
+}
 .navegate__button--back {
    margin: 1em; 
    background: transparent;
    color: var(--Cool-gray);
    border: none;
+}
+
+.navegate__button--back:hover {
+    color: var(--Purplish-blue);
+}
+
+@media screen {
+    .navegate {
+        justify-content:space-between ;
+        align-items: flex-end;
+        padding-top: 2rem;               
+    }
+
+    .navegate__button {
+        margin: 0;
+    }
+
+
 }
