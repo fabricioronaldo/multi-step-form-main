@@ -28,11 +28,13 @@
     color: var(--Purplish-blue);
 }
 
-@media screen {
+@media screen and (min-width: 1024px){
     .navegate {
         justify-content:space-between ;
-        align-items: flex-end;
-        padding-top: 2rem;               
+        
+        padding-top: 2rem;
+        
+                       
     }
 
     .navegate__button {

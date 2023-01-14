@@ -1,3 +1,7 @@
+.pick-yearly {
+    display: none;
+}
+
 .plan__button {
     background: var(--Light-gray);
     padding: 1em;

@@ -34,8 +34,13 @@
 
     .primary__container {
         width: 16.66%;
-        height: 100%;
+        height: 100;
         //padding: 2rem 5rem;
         transition: margin-left 0.3s ease-in-out;
     }
+
+    .container__button {
+        display: flex;
+    }
+
 }

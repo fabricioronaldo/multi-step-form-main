@@ -90,11 +90,11 @@
                 <labe for="phone" class="form__titulo">Phone Number:</labe>
                 <input type="tel" name="phone" id="phone" class="form__title" placeholder="e.g. +1 234 567 890">
               </div>
-              <div class="navegate">
+              <!--<div class="navegate">
 
                 <button class="navegate__button" id="next_1">Next Step</button>
 
-              </div>
+              </div>-->
             </div>
             <!---------- FIM da tela Personal Info ----------->
 
@@ -103,61 +103,61 @@
 
               <h1 class="personal__title">Select your plan</h1>
               <p class="personal__text">You have the option of monthly or yearly billing.</p>
+              <div class="container__button">
+                <div class="form__button">
 
-              <div class="form__button">
-
-                <label for="arcade" class="form__titulo">
-                  <div class="titulo__container">
-                    <input type="radio" name="plan" class="form__arcade" id="arcade">
-                    <img src="./assets/images/icon-arcade.svg" alt="">
-                    <div class="container__text">
-                      <ul>
-                        <li class="text__title">Arcade</li>
-                        <li class="text__value">$9/mo</li>
-                        <li class="text__value-blue">2 Monthf free</li>
-                      </ul>
+                  <label for="arcade" class="form__titulo">
+                    <div class="titulo__container titulo__container-desk">
+                      <input type="radio" name="plan" class="form__arcade" id="arcade">
+                      <img src="./assets/images/icon-arcade.svg" alt="">
+                      <div class="container__text container_text-desk">
+                        <ul>
+                          <li class="text__title">Arcade</li>
+                          <li class="text__value">$9/mo</li>
+                          <li class="text__value-blue">2 Monthf free</li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </label>
-              </div>
+                  </label>
+                </div>
 
-              <div class="form__button">
+                <div class="form__button">
 
-                <label for="advanced" class="form__titulo">
-                  <div class="titulo__container">
-                    <input type="radio" name="plan" id="advanced" class="form__advanced">
-                    <img src="./assets/images/icon-advanced.svg" alt="">
+                  <label for="advanced" class="form__titulo">
+                    <div class="titulo__container titulo__container-desk">
+                      <input type="radio" name="plan" id="advanced" class="form__advanced">
+                      <img src="./assets/images/icon-advanced.svg" alt="">
 
-                    <div class="container__text">
-                      <ul>
-                        <li class="text__title">Advanced</li>
-                        <li class="text__value">$12/mo</li>
-                        <li class="text__value-blue">2 Monthf free</li>
-                      </ul>
+                      <div class="container__text container_text-desk">
+                        <ul>
+                          <li class="text__title">Advanced</li>
+                          <li class="text__value">$12/mo</li>
+                          <li class="text__value-blue">2 Monthf free</li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </label>
+                  </label>
 
-              </div>
+                </div>
 
-              <div class="form__button">
+                <div class="form__button">
 
-                <labe for="pro" class="form__titulo">
-                  <div class="titulo__container">
-                    <input type="radio" name="plan" id="pro" class="form__pro">
-                    <img src="./assets/images/icon-pro.svg" alt="">
+                  <labe for="pro" class="form__titulo">
+                    <div class="titulo__container titulo__container-desk">
+                      <input type="radio" name="plan" id="pro" class="form__pro">
+                      <img src="./assets/images/icon-pro.svg" alt="">
 
-                    <div class="container__text">
-                      <ul>
-                        <li class="text__title">Pro</lbui>
-                        <li class="text__value">$15/mo</li>
-                        <li class="text__value-blue">2 Monthf free</li>
-                      </ul>
+                      <div class="container__text container_text-desk">
+                        <ul>
+                          <li class="text__title">Pro</lbui>
+                          <li class="text__value">$15/mo</li>
+                          <li class="text__value-blue">2 Monthf free</li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </labe>
+                  </labe>
+                </div>
               </div>
-
 
               <div class="plan__button">
 
@@ -170,15 +170,16 @@
                   <span class="yea">Yearly</span>
                 </label>
               </div>
-              <div class="navegate">
+              <!--<div class="navegate">
                 <button class="navegate__button--back" id="back_1">Go Back</button>
 
                 <button class="navegate__button" id="next_2">Next Step</button>
-              </div>
+              </div>-->
             </div>
             <!---------- FIM da tela Select your plan ----------->
 
             <!---------- Início da tela Plan-Yearly ----------->
+            <!--
             <div class="primary__container plan-yearly">
 
               <h1 class="personal__title">Select your plan</h1>
@@ -238,7 +239,7 @@
                   </div>
                 </labe>
               </div>
-            </div>
+            </div>-->
             <!---------- FIM da tela Plan-Yearly ----------->
 
             <!---------- Início da tela Pick Add ons ----------->
@@ -258,7 +259,7 @@
                         <li class="text__value">Access to multiplayer games</li>
                       </ul>
                     </div>
-                    <p class="text__value-blue">+$1/mo</p>
+                    <p class="text__value-mo">+$1/mo</p>
                   </div>
                 </label>
               </div>
@@ -275,7 +276,7 @@
                         <li class="text__value">Extra 1TB of cloud save</li>
                       </ul>
                     </div>
-                    <p class="text__value-blue">+$2/mo</p>
+                    <p class="text__value-mo">+$2/mo</p>
                   </div>
                 </label>
 
@@ -293,11 +294,16 @@
                         <li class="text__value">Custom theme on your profile</li>
                       </ul>
                     </div>
-                    <p class="text__value-blue">+$2/mo</p>
+                    <p class="text__value-mo">+$2/mo</p>
 
                   </div>
                 </label>
               </div>
+              <!--<div class="navegate">
+                <button class="navegate__button--back" id="back_2">Go Back</button>
+
+                <button class="navegate__button" id="next_3">Next Step</button>
+              </div>-->
             </div>
             <!---------- FIM da tela Pick Add ons ----------->
 
@@ -318,7 +324,7 @@
                         <li class="text__value">Access to multiplayer games</li>
                       </ul>
                     </div>
-                    <p class="text__value-blue">+$10/yr</p>
+                    <p class="text__value-yr">+$10/yr</p>
                   </div>
                 </label>
               </div>
@@ -335,7 +341,7 @@
                         <li class="text__value">Extra 1TB of cloud save</li>
                       </ul>
                     </div>
-                    <p class="text__value-blue">+$20/yr</p>
+                    <p class="text__value-yr">+$20/yr</p>
                   </div>
                 </label>
 
@@ -353,11 +359,16 @@
                         <li class="text__value">Custom theme on your profile</li>
                       </ul>
                     </div>
-                    <p class="text__value-blue">+$20/yr</p>
+                    <p class="text__value-yr">+$20/yr</p>
 
                   </div>
                 </labe>
               </div>
+              <!--<div class="navegate">
+                <button class="navegate__button--back" id="back_3">Go Back</button>
+
+                <button class="navegate__button" id="next_4">Next Step</button>
+              </div>-->
             </div>
             <!---------- FIM da tela Pick add Ons - Year ---------->
 
@@ -409,6 +420,11 @@
                   </div>
                 </labe>
               </div>
+          <!--<div class="navegate">
+                <button class="navegate__button--back" id="back_4">Go Back</button>
+
+                <button class="navegate__button" id="next_5">Next Step</button>
+              </div>-->
             </div>
             <!--------- Início da tela de Finishing UP ---------->
           </form>
@@ -416,14 +432,14 @@
 
       </section>
 
-      <!--
+      
       <section class="navegate">
 
         <button class="navegate__button--back" id="back">Go Back</button>
 
         <button class="navegate__button" id="next">Next Step</button>
 
-      </section>-->
+      </section>
 
     </main>
 
