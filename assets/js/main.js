@@ -1,6 +1,7 @@
 const btnBack = document.querySelector("#back");
 console.log(btnBack);
 const next = document.querySelector(".navegate__button");
+const voltar = document.querySelector(".navegate__button--back");
 const next_1 = document.querySelector("#next_1");
 const next_2 = document.querySelector("#next_2");
 const next_3 = document.querySelector("#next_3");
@@ -31,8 +32,8 @@ toggle.addEventListener("change", function() {
         active[0].classList.add("text__value-active");    
         active[1].classList.add("text__value-active");    
         active[2].classList.add("text__value-active");    
-        pick.style.display = "none";
-        yearly.style.display = "block";
+        //pick.style.display = "none";
+        //yearly.style.display = "block";
 
     }else {
         active[0].classList.remove("text__value-active")
@@ -100,9 +101,16 @@ back_4.addEventListener("click", function(event) {
 next.addEventListener("click", function(event){
     
     verifica2(current);
+    
 })
 
-const form = ["personal","plan","pick","pick-yearly","finishing"];
+voltar.addEventListener("click", function(event){
+    back(current);    
+})
+
+
+
+const form = ["personal","plan","pick","finishing"];
 console.log(form);
 
 
@@ -147,6 +155,49 @@ function verifica2(cont){
                 case "finishing":
                     slidePage[i].style.marginLeft = "-16.66%";
                     current += 1;
+                    break;
+                
+                default:
+                    break;
+
+            }
+            console.log(clase);
+            
+        //}
+    break;
+    }
+}
+
+function back(cont){
+    for (let i = cont; i < form.length; i++) {
+
+        //let slide = slidePage[i].classList;
+        //console.log(slide);
+        //for (let j = 0; j < slide.length; j++) {
+            
+            let clase = form[i];
+        
+            switch (clase){
+
+                case "personal":
+                    slidePage[i].style.marginLeft = "16.66";
+                    current -= 1;
+                    break;
+                case "plan":
+                    slidePage[i-1].style.marginLeft = "0";
+                    current -= 1;
+                    break;
+                case "pick":
+                    slidePage[i-1].style.marginLeft = "0";
+                    current -= 1;
+                    break;
+                case "pick-yearly":
+                    slidePage[i-1].style.marginLeft = "0%";
+                    current -= 1;
+                    break;
+                case "finishing":
+                    slidePage[i-1].style.marginLeft = "0%";
+                    current -= 1;
                     break;
                 
                 default:

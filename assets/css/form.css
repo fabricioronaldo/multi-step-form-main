@@ -20,6 +20,12 @@
     border-radius: 5px;
 }
 
+.radius-action {
+    background-color: var(--Alabaster);
+    border: 1px solid var(--Purplish-blue);
+    
+}
+
 .titulo__container {
     display: flex;
     align-items: center;
@@ -42,7 +48,7 @@ input[type=radio] {
 }
 
 .text__value {
-    color: var(--Light-gray);
+    color: var(--Cool-gray);
     padding: .2em 0;
 }
 

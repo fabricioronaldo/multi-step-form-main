@@ -18,7 +18,7 @@
     background: var(--Purplish-blue);
 }
 .navegate__button--back {
-   margin: 1em; 
+   margin: 1em 1em 1em 0; 
    background: transparent;
    color: var(--Cool-gray);
    border: none;
@@ -30,9 +30,9 @@
 
 @media screen and (min-width: 1024px){
     .navegate {
-        justify-content:space-between ;
+        justify-content:space-between;
+        padding: 0 1.5rem;
         
-        padding-top: 2rem;
         
                        
     }
