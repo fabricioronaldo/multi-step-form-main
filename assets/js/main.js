@@ -1,30 +1,41 @@
 const btnBack = document.querySelector("#back");
-console.log(btnBack);
 const next = document.querySelector(".navegate__button");
 const voltar = document.querySelector(".navegate__button--back");
-const next_1 = document.querySelector("#next_1");
-const next_2 = document.querySelector("#next_2");
-const next_3 = document.querySelector("#next_3");
-const next_4 = document.querySelector("#next_4");
-const back_1 = document.querySelector("#back_1");
-const back_2 = document.querySelector("#back_2");
-const back_3 = document.querySelector("#back_3");
-const back_4 = document.querySelector("#back_4");
-
 const slidePage = document.querySelectorAll(".primary__container");
-console.log(slidePage);
-
 const active = document.querySelectorAll(".text__value-blue");
-
 const pick = document.querySelector(".pick");
 const yearly = document.querySelector(".pick-yearly");
 const toggle = document.querySelector(".button__check");
-console.log(toggle);
-console.log(slidePage);
-//console.log(slidePage[0].classList.contains("personal"));
 
+
+const btnPlan = document.querySelectorAll(".form__button");
+console.log(arcade);
+const radius_arcade = document.getElementsByName("plan");
+console.log(radius_arcade);
 let current = 0;
 
+arcade.addEventListener("click", function(){
+    addClass();
+})
+
+advanced.addEventListener("click", function(){
+    addClass();
+})
+
+pro.addEventListener("click", function(){
+    addClass();
+})
+
+function addClass() {
+    for (i in radius_arcade){
+        if(radius_arcade[i].checked){
+            btnPlan[i].classList.add("radius-action");
+            console.log(btnPlan);
+        } else {
+            btnPlan[i].classList.remove("radius-action");
+        } 
+    }
+}
 
 
 toggle.addEventListener("change", function() {
@@ -211,4 +222,21 @@ function back(cont){
     }
 }
 
-//verifica2();
+/*Adicionar a classe no botão checked */
+
+let boxes = document.querySelectorAll("input[type='checkbox']")
+
+for (let i of boxes){
+    i.onclick = function(){
+        let pai = this.parentNode.parentNode.parentNode;
+
+        if (this.checked){
+            pai.style.background = "var(--Alabaster)";
+            pai.style.border = "1px solid var(--Purplish-blue)";
+        } else {
+            pai.style.background = "var(--White)";
+            pai.style.border = "1px solid var(--Light-gray)";
+
+        }
+    }
+}

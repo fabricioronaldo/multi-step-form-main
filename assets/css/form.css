@@ -38,7 +38,12 @@
 }
 
 input[type=radio] {
-    visibility: hidden;
+//    visibility: hidden;
+}
+
+input:checked ~ < .titulo__container < .form__button {
+    background-color: var(--Alabaster);
+    border: 1px solid var(--Purplish-blue);
 }
 
 .text__title {
